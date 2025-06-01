@@ -3,7 +3,7 @@ name: CI/CD for Python App
 
 on:
   push:
-    branches: [main]
+    branches: [master]
   pull_request:
 
 jobs:
@@ -52,6 +52,6 @@ jobs:
           username: ${{ secrets.MAIL_USERNAME }}
           password: ${{ secrets.MAIL_PASSWORD }}
           subject: CI/CD Pipeline Success
-          to: your-email@example.com
+          to: farebl.04@gmail.com
           from: GitHub Actions <your-email@example.com>
           body: The CI/CD pipeline for my-python-project has completed successfully!
